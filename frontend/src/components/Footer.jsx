@@ -8,6 +8,12 @@ const Footer = () => {
   return (
     <>
       <div className="footer_main_container">
+        <div>
+          <h3>Unique Visitors Today: 24</h3>
+        </div>
+        <div>
+          <h3>Server is: Live 🟢</h3>
+        </div>
         <div className="footer_logo_container">
           <ul>
             <li className="footer_contact_logos">
