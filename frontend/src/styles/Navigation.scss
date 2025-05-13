@@ -1,4 +1,13 @@
-p {
-  font-size: 100px;
+.nav_container {
+  display: flex;
 }
 
+.nav_img {
+  height: 20px;
+  width: 20px;
+}
+
+.nav_branding {
+  display: flex;
+  gap: 1;
+}
