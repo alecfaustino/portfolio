@@ -10,7 +10,7 @@ const Navigation = () => {
             className="nav_img"
             src="../../public/compressed_image_new.jpg"
             alt="small photo of Alec Faustino"></img>
-          <span className="nav_name">Alec Faustino</span>
+          <h2 className="nav_name">Alec Faustino</h2>
         </div>
         <div className="nav_topics_container">
           <ul>

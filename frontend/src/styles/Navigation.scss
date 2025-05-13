@@ -1,29 +1,36 @@
 .nav_container {
   display: flex;
   justify-content: space-between;
-}
-
-.nav_img {
-  height: 20px;
-  width: 20px;
+  border-bottom: 2px solid white;
 }
 
 .nav_branding {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_img {
+  height: 50px;
+  width: 50px;
+  margin: 0px;
+  padding: 5px;
 }
 
 .nav_topics_container {
   display: flex;
+  align-items: center;
   
 }
 
 .nav_topics_container ul {
   display: flex;
   list-style: none;
-  
+  justify-content: space-between;
 }
 
 .nav_topics_container li {
   display: flex;
-  justify-content: space-evenly;
+  padding: 5px;
+  margin: 0px;
 }
