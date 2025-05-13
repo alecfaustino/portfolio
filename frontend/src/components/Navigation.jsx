@@ -1,9 +1,15 @@
 import React from "react";
+import "../styles/Navigation.scss";
 
 const Navigation = () => {
   return (
     <>
-      <div>This is the Navigation, it shows</div>
+      <div>
+        <div className="nav_branding">
+          <p>temp</p>
+          <h2 className="nav_name">Alec Faustino</h2>
+        </div>
+      </div>
     </>
   );
 };
