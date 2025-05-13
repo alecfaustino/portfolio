@@ -12,6 +12,14 @@ const Navigation = () => {
             alt="small photo of Alec Faustino"></img>
           <span className="nav_name">Alec Faustino</span>
         </div>
+        <div className="nav_topics_container">
+          <ul>
+            <li>Projects</li>
+            <li>Experience</li>
+            <li>Interests</li>
+            <li>Contact</li>
+          </ul>
+        </div>
       </div>
     </>
   );

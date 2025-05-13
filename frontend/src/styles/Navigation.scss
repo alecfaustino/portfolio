@@ -1,5 +1,6 @@
 .nav_container {
   display: flex;
+  justify-content: space-between;
 }
 
 .nav_img {
@@ -9,5 +10,20 @@
 
 .nav_branding {
   display: flex;
-  gap: 1;
+}
+
+.nav_topics_container {
+  display: flex;
+  
+}
+
+.nav_topics_container ul {
+  display: flex;
+  list-style: none;
+  
+}
+
+.nav_topics_container li {
+  display: flex;
+  justify-content: space-evenly;
 }
