@@ -19,6 +19,14 @@ const Landing = () => {
               soluta. Quas repellendus quos culpa!
             </p>
           </div>
+          <div className="landing_contact_buttons_container">
+            <button className="landing_buttons">downloadCV();</button>
+            <button className="landing_buttons">contactMe();</button>
+          </div>
+          <div className="landing_facts_button_container">
+            <button className="landing_buttons">randomFact();</button>
+            <p>This is where the fact would go</p>
+          </div>
         </div>
       </div>
     </>
