@@ -7,12 +7,12 @@ import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
     <>
-      <div className="footer_main_container">
+      <footer className="footer_main_container">
         <div>
-          <h3>Unique Visitors Today: 24</h3>
+          <p>Unique Visitors Today: 24</p>
         </div>
         <div>
-          <h3>Server is: Live 🟢</h3>
+          <p>Server is: Live 🟢</p>
         </div>
         <div className="footer_logo_container">
           <ul>
@@ -30,7 +30,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-      </div>
+      </footer>
     </>
   );
 };

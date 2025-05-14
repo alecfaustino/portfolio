@@ -1,12 +1,13 @@
 import "./App.css";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import Landing from "./components/Landing";
 
 function App() {
   return (
     <>
       <Navigation />
-      <h1>Hello World</h1>
+      <Landing />
       <Footer />
     </>
   );
