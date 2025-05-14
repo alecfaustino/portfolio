@@ -4,21 +4,33 @@ const Landing = () => {
   return (
     <>
       <div className="landing_main_container">
-        <div>
+        <div className="landing_image_container">
           <img className="landing_main_img" src="../../public/mainphoto.jpg" />
         </div>
         <div className="landing_interactive_container">
-          <div className="landing_Aboutme_container">
+          <section className="landing_Aboutme_container">
             <h1>aboutMe</h1>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio ut
-              omnis, iure quidem totam, quos quae quia explicabo corrupti
-              tenetur libero aliquid voluptas ullam minus non, culpa sit
-              nesciunt. Earum temporibus obcaecati iure amet eligendi est
-              aperiam natus. Nihil, a quod hic quisquam excepturi necessitatibus
-              soluta. Quas repellendus quos culpa!
+              I’m a <strong>software developer</strong> based in{" "}
+              <strong>Calgary</strong> with a background in
+              <strong> team leadership</strong> and a focus on building
+              <em> thoughtful, user-centered</em> web applications. I began
+              learning the
+              <strong> JavaScript ecosystem</strong> through hands-on projects
+              and <strong> Lighthouse Labs bootcamp</strong>, and I’m always
+              open to learning new tools and technologies as the work requires.
             </p>
-          </div>
+            <p>
+              My experience leading teams taught me how to
+              <strong> collaborate</strong>,{" "}
+              <strong>solve problems efficiently</strong>, and
+              <strong> follow through on delivering results</strong> — skills I
+              now bring to writing <strong>clear, maintainable code</strong>.
+              I’m looking to join a team where I can continue building{" "}
+              <em>useful software</em> and growing as a developer. You can find
+              more about my experience in my CV below.
+            </p>
+          </section>
           <div className="landing_contact_buttons_container">
             <button className="landing_buttons">downloadCV();</button>
             <button className="landing_buttons">contactMe();</button>

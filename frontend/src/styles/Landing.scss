@@ -2,6 +2,11 @@
   display: flex;
   justify-content: space-between;
 }
+
+.landing_image_container {
+  display: flex;
+  align-items: center;
+}
 .landing_main_img {
   height: 250px;
   width: 250px;
