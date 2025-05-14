@@ -30,6 +30,24 @@
   padding: 0px;
 }
 
+.landing_Aboutme_container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.landing_Aboutme_container strong {
+  color: #e0e0e0;
+}
+
+.landing_Aboutme_container em {
+  font-style: italic;
+  color: #bcbcbc;
+}
+
 .landing_contact_buttons_container {
   display: flex;
   justify-content: space-around;

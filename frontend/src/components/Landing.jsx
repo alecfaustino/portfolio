@@ -13,22 +13,35 @@ const Landing = () => {
             <p>
               I’m a <strong>software developer</strong> based in{" "}
               <strong>Calgary</strong> with a background in
-              <strong> team leadership</strong> and a focus on building
-              <em> thoughtful, user-centered</em> web applications. I began
-              learning the
-              <strong> JavaScript ecosystem</strong> through hands-on projects
-              and <strong> Lighthouse Labs bootcamp</strong>, and I’m always
-              open to learning new tools and technologies as the work requires.
+              <strong>team leadership</strong> and a focus on building{" "}
+              <em>thoughtful, user-centered</em> web applications.
             </p>
             <p>
-              My experience leading teams taught me how to
-              <strong> collaborate</strong>,{" "}
+              Before transitioning into tech, I earned a{" "}
+              <strong>
+                Bachelor of Science in Cellular and Molecular Biology
+              </strong>
+              , originally planning to pursue medicine. But along the way, I
+              realized the reasons I was drawn to that path —
+              <strong>continuous learning</strong>,{" "}
+              <strong>career growth</strong>, and working in a{" "}
+              <strong>professional, problem-solving environment</strong> — were
+              also deeply present in <strong>software development</strong>.
+            </p>
+            <p>
+              I began learning the <strong>JavaScript ecosystem</strong> through
+              hands-on projects and a <strong>full-time bootcamp</strong>, and
+              I’m always open to learning new tools and technologies as the work
+              requires.
+            </p>
+            <p>
+              My experience leading teams taught me how to{" "}
+              <strong>collaborate</strong>,{" "}
               <strong>solve problems efficiently</strong>, and
-              <strong> follow through on delivering results</strong> — skills I
+              <strong>follow through on delivering results</strong> — skills I
               now bring to writing <strong>clear, maintainable code</strong>.
               I’m looking to join a team where I can continue building{" "}
-              <em>useful software</em> and growing as a developer. You can find
-              more about my experience in my CV below.
+              <em>useful software</em> and growing as a developer.
             </p>
           </section>
           <div className="landing_contact_buttons_container">

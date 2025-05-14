@@ -9,7 +9,7 @@ const Footer = () => {
     <>
       <footer className="footer_main_container">
         <div>
-          <p>Unique Visitors Today: 24</p>
+          <p>Unique Visitors: 24</p>
         </div>
         <div>
           <p>Server is: Live 🟢</p>
