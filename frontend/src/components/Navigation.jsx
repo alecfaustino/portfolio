@@ -14,6 +14,7 @@ const Navigation = () => {
         </div>
         <div className="nav_topics_container">
           <ul>
+            <li>Home</li>
             <li>Projects</li>
             <li>Experience</li>
             <li>Interests</li>
