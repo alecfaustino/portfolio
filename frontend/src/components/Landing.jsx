@@ -9,7 +9,7 @@ const Landing = () => {
         </div>
         <div className="landing_interactive_container">
           <section className="landing_Aboutme_container">
-            <h1>aboutMe</h1>
+            <h2>aboutMe</h2>
             <p>
               I’m a <strong>software developer</strong> based in{" "}
               <strong>Calgary</strong> with a background in
