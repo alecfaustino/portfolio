@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Navigation.scss";
 
-const Navigation = () => {
+const Navigation = ({ selectTopic, topic }) => {
   return (
     <>
       <div className="nav_container">
@@ -14,11 +14,41 @@ const Navigation = () => {
         </div>
         <div className="nav_topics_container">
           <ul>
-            <li>Home</li>
-            <li>Projects</li>
-            <li>Experience</li>
-            <li>Interests</li>
-            <li>Contact</li>
+            <li
+              onClick={() => {
+                selectTopic("landing");
+                console.log(topic);
+              }}>
+              Home
+            </li>
+            <li
+              onClick={() => {
+                selectTopic("projects");
+                console.log(topic);
+              }}>
+              Projects
+            </li>
+            <li
+              onClick={() => {
+                selectTopic("experience");
+                console.log(topic);
+              }}>
+              Experience
+            </li>
+            <li
+              onClick={() => {
+                selectTopic("interests");
+                console.log(topic);
+              }}>
+              Interests
+            </li>
+            <li
+              onClick={() => {
+                selectTopic("contact");
+                console.log(topic);
+              }}>
+              Contact
+            </li>
           </ul>
         </div>
       </div>

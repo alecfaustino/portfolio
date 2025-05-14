@@ -11,8 +11,12 @@ function App() {
   };
   return (
     <>
-      <Navigation onClick={selectTopic} />
-      <Landing />
+      <Navigation topic={topic} selectTopic={selectTopic} />
+      {topic === "landing" && <Landing />}
+      {topic === "projects" && <h1>Projects</h1>}
+      {topic === "experience" && <h1>Experience</h1>}
+      {topic === "interests" && <h1>Interests</h1>}
+      {topic === "contact" && <h1>Contact</h1>}
       <Footer />
     </>
   );
