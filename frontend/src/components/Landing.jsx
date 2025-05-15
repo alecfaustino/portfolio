@@ -1,5 +1,24 @@
 import React from "react";
 import "../styles/Landing.scss";
+import {
+  SiJavascript,
+  SiRuby,
+  SiHtml5,
+  SiCss3,
+  SiReact,
+  SiNodedotjs,
+  SiExpress,
+  SiRubyonrails,
+  SiJquery,
+  SiBootstrap,
+  SiSass,
+  SiMongodb,
+  SiPostgresql,
+  SiGit,
+  SiMocha,
+} from "react-icons/si";
+import { FaCookie, FaLock, FaMugHot, FaExchangeAlt } from "react-icons/fa";
+
 const Landing = () => {
   return (
     <>
@@ -49,8 +68,87 @@ const Landing = () => {
             <button className="landing_buttons">contactMe();</button>
           </div>
           <div className="landing_facts_button_container">
-            <button className="landing_buttons">randomFact();</button>
-            <p>This is where the fact would go</p>
+            <div className="landing_skills">
+              <h2>mySkills</h2>
+              <div className="tech-icons-grid">
+                <div className="tech-icon">
+                  <SiJavascript title="JavaScript" />
+                  <p>JavaScript</p>
+                </div>
+                <div className="tech-icon">
+                  <SiReact title="React" />
+                  <p>React</p>
+                </div>
+                <div className="tech-icon">
+                  <SiNodedotjs title="Node.js" />
+                  <p>Node.js</p>
+                </div>
+                <div className="tech-icon">
+                  <SiExpress title="Express" />
+                  <p>Express</p>
+                </div>
+                <div className="tech-icon">
+                  <SiMongodb title="MongoDB" />
+                  <p>MongoDB</p>
+                </div>
+                <div className="tech-icon">
+                  <SiPostgresql title="PostgreSQL" />
+                  <p>PostgreSQL</p>
+                </div>
+                <div className="tech-icon">
+                  <SiHtml5 title="HTML" />
+                  <p>HTML</p>
+                </div>
+                <div className="tech-icon">
+                  <SiCss3 title="CSS" />
+                  <p>CSS</p>
+                </div>
+                <div className="tech-icon">
+                  <SiSass title="SASS" />
+                  <p>SASS</p>
+                </div>
+                <div className="tech-icon">
+                  <SiBootstrap title="Bootstrap" />
+                  <p>Bootstrap</p>
+                </div>
+                <div className="tech-icon">
+                  <SiJquery title="jQuery" />
+                  <p>jQuery</p>
+                </div>
+                <div className="tech-icon">
+                  <SiMocha title="Mocha" />
+                  <p>Mocha</p>
+                </div>
+                <div className="tech-icon">
+                  <FaMugHot title="Chai" />
+                  <p>Chai</p>
+                </div>
+                <div className="tech-icon">
+                  <FaLock title="bcrypt" />
+                  <p>bcrypt</p>
+                </div>
+                <div className="tech-icon">
+                  <FaCookie title="cookie-session" />
+                  <p>cookie-session</p>
+                </div>
+                <div className="tech-icon">
+                  <SiRuby title="Ruby" />
+                  <p>Ruby</p>
+                </div>
+                <div className="tech-icon">
+                  <SiRubyonrails title="Rails" />
+                  <p>Rails</p>
+                </div>
+                <div className="tech-icon">
+                  <FaExchangeAlt title="AJAX" />
+                  <p>AJAX</p>
+                </div>
+                <div className="tech-icon">
+                  <SiGit title="Git" />
+                  <p>Git</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
