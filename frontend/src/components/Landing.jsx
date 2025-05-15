@@ -18,8 +18,11 @@ import {
   SiMocha,
 } from "react-icons/si";
 import { FaCookie, FaLock, FaMugHot, FaExchangeAlt } from "react-icons/fa";
+import { useState } from "react";
 
 const Landing = () => {
+  const [showAll, setShowAll] = useState(false);
+  const toggleShowAll = () => setShowAll((prev) => !prev);
   return (
     <>
       <div className="landing_main_container">
@@ -64,90 +67,96 @@ const Landing = () => {
             </p>
           </section>
           <div className="landing_contact_buttons_container">
-            <button className="landing_buttons">downloadCV();</button>
-            <button className="landing_buttons">contactMe();</button>
+            <button className="landing_buttons">downloadCV</button>
+            <button className="landing_buttons">contactMe</button>
           </div>
           <div className="landing_facts_button_container">
             <div className="landing_skills">
               <h2>mySkills</h2>
-              <div className="tech-icons-grid">
-                <div className="tech-icon">
+              <div
+                className={`tech_icons_grid ${
+                  showAll ? "expanded" : "collapsed"
+                }`}>
+                <div className="tech_icon">
                   <SiJavascript title="JavaScript" />
                   <p>JavaScript</p>
                 </div>
-                <div className="tech-icon">
+                <div className="tech_icon">
                   <SiReact title="React" />
                   <p>React</p>
                 </div>
-                <div className="tech-icon">
+                <div className="tech_icon">
                   <SiNodedotjs title="Node.js" />
                   <p>Node.js</p>
                 </div>
-                <div className="tech-icon">
+                <div className="tech_icon">
                   <SiExpress title="Express" />
                   <p>Express</p>
                 </div>
-                <div className="tech-icon">
+                <div className="tech_icon">
                   <SiMongodb title="MongoDB" />
                   <p>MongoDB</p>
                 </div>
-                <div className="tech-icon">
+                <div className="tech_icon">
                   <SiPostgresql title="PostgreSQL" />
                   <p>PostgreSQL</p>
                 </div>
-                <div className="tech-icon">
+                <div className="tech_icon">
                   <SiHtml5 title="HTML" />
                   <p>HTML</p>
                 </div>
-                <div className="tech-icon">
+                <div className="tech_icon">
                   <SiCss3 title="CSS" />
                   <p>CSS</p>
                 </div>
-                <div className="tech-icon">
+                <div className="tech_icon">
                   <SiSass title="SASS" />
                   <p>SASS</p>
                 </div>
-                <div className="tech-icon">
+                <div className="tech_icon">
                   <SiBootstrap title="Bootstrap" />
                   <p>Bootstrap</p>
                 </div>
-                <div className="tech-icon">
+                <div className="tech_icon">
                   <SiJquery title="jQuery" />
                   <p>jQuery</p>
                 </div>
-                <div className="tech-icon">
+                <div className="tech_icon">
                   <SiMocha title="Mocha" />
                   <p>Mocha</p>
                 </div>
-                <div className="tech-icon">
+                <div className="tech_icon">
                   <FaMugHot title="Chai" />
                   <p>Chai</p>
                 </div>
-                <div className="tech-icon">
+                <div className="tech_icon">
                   <FaLock title="bcrypt" />
                   <p>bcrypt</p>
                 </div>
-                <div className="tech-icon">
-                  <FaCookie title="cookie-session" />
-                  <p>cookie-session</p>
+                <div className="tech_icon">
+                  <FaCookie title="cookie_session" />
+                  <p>cookie_session</p>
                 </div>
-                <div className="tech-icon">
+                <div className="tech_icon">
                   <SiRuby title="Ruby" />
                   <p>Ruby</p>
                 </div>
-                <div className="tech-icon">
+                <div className="tech_icon">
                   <SiRubyonrails title="Rails" />
                   <p>Rails</p>
                 </div>
-                <div className="tech-icon">
+                <div className="tech_icon">
                   <FaExchangeAlt title="AJAX" />
                   <p>AJAX</p>
                 </div>
-                <div className="tech-icon">
+                <div className="tech_icon">
                   <SiGit title="Git" />
                   <p>Git</p>
                 </div>
               </div>
+              <button onClick={toggleShowAll} className="show_more_btn">
+                {showAll ? "Show less" : "Show more"}
+              </button>
             </div>
           </div>
         </div>
