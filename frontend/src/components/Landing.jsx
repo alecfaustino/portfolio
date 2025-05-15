@@ -36,7 +36,11 @@ const Landing = ({ selectTopic }) => {
       <div className="landing_main_container">
         <div className="landing_image_container">
           <h3>Hello World, I'm Alec.</h3>
-          <img className="landing_main_img" src="../../public/mainphoto.jpg" />
+          <img
+            className="landing_main_img"
+            src="/mainphoto.jpg"
+            alt="profile photo of Alec"
+          />
         </div>
         <div className="landing_interactive_container">
           <section className="landing_Aboutme_container">

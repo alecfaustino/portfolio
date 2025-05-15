@@ -19,6 +19,9 @@
   padding: 20px;
   box-shadow: 0 0 10px rgba(51, 204, 255, 1);
 }
+.landing_main_img:hover {
+  box-shadow: 0 0 10px white;
+}
 
 .landing_interactive_container {
   display: flex;

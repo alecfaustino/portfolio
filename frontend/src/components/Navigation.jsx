@@ -8,7 +8,7 @@ const Navigation = ({ selectTopic, topic }) => {
         <div className="nav_branding" onClick={() => selectTopic("landing")}>
           <img
             className="nav_img"
-            src="../../public/compressed_image_new.jpg"
+            src="/compressed_image_new.jpg"
             alt="small photo of Alec Faustino"></img>
           <h2 className="nav_name">Alec Faustino</h2>
         </div>
