@@ -150,3 +150,9 @@
     color: #ffffff;
   }
 }
+
+@media (min-width: 1410px) {
+  .show_more_btn {
+    display: none;
+  }
+}
