@@ -20,13 +20,22 @@ import {
 import { FaCookie, FaLock, FaMugHot, FaExchangeAlt } from "react-icons/fa";
 import { useState } from "react";
 
-const Landing = () => {
+const Landing = ({ selectTopic }) => {
   const [showAll, setShowAll] = useState(false);
   const toggleShowAll = () => setShowAll((prev) => !prev);
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "../../public/Resume2025.pdf";
+    link.download = "My_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <>
       <div className="landing_main_container">
         <div className="landing_image_container">
+          <h3>Hello World, I'm Alec.</h3>
           <img className="landing_main_img" src="../../public/mainphoto.jpg" />
         </div>
         <div className="landing_interactive_container">
@@ -67,8 +76,15 @@ const Landing = () => {
             </p>
           </section>
           <div className="landing_contact_buttons_container">
-            <button className="landing_buttons">downloadCV</button>
-            <button className="landing_buttons">contactMe</button>
+            <button onClick={handleDownload} className="landing_buttons">
+              downloadCV
+            </button>
+
+            <button
+              onClick={() => selectTopic("contact")}
+              className="landing_buttons">
+              contactMe
+            </button>
           </div>
           <div className="landing_facts_button_container">
             <div className="landing_skills">

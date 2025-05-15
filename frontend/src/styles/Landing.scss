@@ -72,12 +72,6 @@
   border-radius: 6px;
   height: 50px;
   cursor: pointer;
-  // border: 2px solid #fff;
-  // font-size: 1rem;
-  // font-weight: 500;
-  // transition: all 0.3s ease;
-
-  // Option 2
   background-color: #fff;
   color: #000;
   border: none;
@@ -86,30 +80,11 @@
   box-shadow: 0 0 0px rgba(255, 255, 255, 0);
   transition: all 0.3s ease, transform 0.2s ease;
 
-  // Option 3
-  // background-color: transparent;
-  // color: #fff;
-  // font-size: 1rem;
-  // border: 2px solid #888;
-  // border-radius: 50px;
-  // transition: all 0.25s ease;
-
-
-
 }
 
 .landing_buttons:hover {
-  // background: #fff;
-  // color: #000;
-
-  // Option 2
   box-shadow: 0 0 4px 2px rgba(51, 204, 255, 1);
   transform: scale(1.02);
-
-  // Option 3
-  // background-color: #fff;
-  // color: #000;
-  // border-color: #fff;
 }
 
 .landing_skills {
@@ -125,6 +100,7 @@
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
   gap: 0.5rem;
   justify-items: center;
+  transition: max-height 0.6s ease;
 }
 
 .tech_icon {
@@ -133,7 +109,7 @@
   align-items: center;
   color: white;
   font-size: 2rem;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 1.2s ease-in-out;
 }
 
 .tech_icon p {
@@ -149,12 +125,12 @@
 .tech_icons_grid.collapsed {
   max-height: 150px; 
   overflow: hidden;
-  transition: max-height 0.3s ease;
+  transition: max-height 0.6s ease;
 }
 
 .tech_icons_grid.expanded {
-  max-height: 1000px; 
-  transition: max-height 0.3s ease;
+  max-height: 400px; 
+  transition: max-height 0.6s ease;
 }
 
 .show_more_btn {

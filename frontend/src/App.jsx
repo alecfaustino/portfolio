@@ -12,11 +12,13 @@ function App() {
   return (
     <>
       <Navigation topic={topic} selectTopic={selectTopic} />
-      {topic === "landing" && <Landing />}
+      {topic === "landing" && (
+        <Landing topic={topic} selectTopic={selectTopic} />
+      )}
       {topic === "projects" && <h1>Projects</h1>}
       {topic === "experience" && <h1>Experience</h1>}
       {topic === "interests" && <h1>Interests</h1>}
-      {topic === "contact" && <h1>Contact</h1>}
+      {topic === "contact" && <h1>Contact Page Coming Soon</h1>}
       <Footer />
     </>
   );
