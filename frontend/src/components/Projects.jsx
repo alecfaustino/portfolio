@@ -29,6 +29,8 @@ const techIcons = {
   expressjs: <SiExpress title="Express.js" />,
   ruby: <SiRuby title="Ruby" />,
   jquery: <SiJquery title="jQuery" />,
+  cookies: <FaCookie title="cookies" />,
+  bcrypt: <FaLock title="bcrypt" />,
 };
 
 const Projects = () => {
@@ -36,24 +38,26 @@ const Projects = () => {
     <>
       <h2>myProjects</h2>
       <div className="project_cards_container">
-        {projectsList.map((project) => (
-          <div className="project_card" key={project.id}>
-            <div>
-              <img className="project_card_img" src={project.photo} />
-            </div>
-            <div>
-              <h4>{project.title}</h4>
-              <h5>Tech Used: </h5>
-              <div className="tech_icon_container">
-                {project.stack.map((tech, index) => (
-                  <span key={index} className="tech_icon">
-                    {techIcons[tech]}
-                  </span>
-                ))}
+        {[...projectsList]
+          .sort((a, b) => b.id - a.id)
+          .map((project) => (
+            <div className="project_card" key={project.id}>
+              <div>
+                <img className="project_card_img" src={project.photo} />
+              </div>
+              <div>
+                <h4>{project.title}</h4>
+                <h5>Tech Used: </h5>
+                <div className="tech_icon_container">
+                  {project.stack.map((tech, index) => (
+                    <span key={index} className="tech_icon">
+                      {techIcons[tech]}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-        ))}
+          ))}
       </div>
     </>
   );
