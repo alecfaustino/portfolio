@@ -3,7 +3,7 @@ const projectsList = [
     id: 1,
     title: "Lotide",
     description: "A mini clone of the Lodash library",
-    stack: ["javascript", "mocha", "git"],
+    stack: ["javascript", "mocha", ",chai", "git"],
     deployedUrl: "https://www.npmjs.com/package/@alecfaustino/lotide",
     repoURL: "https://github.com/alecfaustino/Lotide",
     isDeployed: true, 
@@ -46,16 +46,27 @@ const projectsList = [
   {
     id: 5,
     title: "LighthouseBNB",
-    description: "A Single Page App built with HTML, CSS, JS, JQuery, and AJAX. A twitter clone.",
-    stack: ["javascript", "postgresql", "css", "node", "ajax", "jquery", "git"],
+    description: "A simple multi-page AirBnB clone that uses server-side JavaScript to display the infomration via SQL Queries to web pages.",
+    stack: ["javascript", "postgresql", "expressjs", "sass", "cookies", "jquery", "git"],
     deployedUrl: null,
     repoURL: "https://github.com/alecfaustino/LightBnB",
     isDeployed: false, 
-    highlights: ["This project helped me learn to build an HTTP Server that handles requests from the client. This also introduced concepts like authentication protection, use cookies to gather information about logged-in state, and analytics of the URLs, etc. Importantly, there was an implementation of CRUD."],
-    photo: "/tweeter.png"
+    highlights: ["This project helped me gain a deeper understanding of relational databases, database security, and database design. The primary focus of this project was to work with Entity Relationship Diagrams and postgreSQL"],
+    photo: "/lightbnb.png"
+  },
+    {
+    id: 6,
+    title: "PhotoLabs",
+    description: "React-based single-page application that allows users to view photos in different contexts.",
+    stack: ["React", "expressjs", "nodejs", "sass", "postgresql", "git"],
+    deployedUrl: null,
+    repoURL: "https://github.com/alecfaustino/photolabs",
+    isDeployed: false, 
+    highlights: ["This project a great introduction to React and hooks. I utilized useState, useEffect, useReducer, and some custom hooks."],
+    photo: "/photolabs.png"
   },
   {
-    id: 6,
+    id: 7,
     title: "The Kid's Place Daycare",
     description: "A responsive, client-collaborated website to showcase daycare services and drive lead generation.",
     stack: ["html", "css", "javascript", "git"],

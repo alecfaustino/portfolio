@@ -37,6 +37,9 @@ const techIcons = {
   postgresql: <SiPostgresql title="PostgreSQL" />,
   mocha: <SiMocha title="mocha" />,
   git: <SiGit title="git" />,
+  chai: <FaMugHot title="chai" />,
+  mongodb: <SiMongodb title="MongoDB" />,
+  rails: <SiRubyonrails title="Ruby on Rails" />,
 };
 
 const Projects = () => {
@@ -54,14 +57,16 @@ const Projects = () => {
               <div>
                 <h4>{project.title}</h4>
                 <p>{project.description}</p>
-                <h5>Tech Used: </h5>
-                <div className="tech_icon_container">
-                  {project.stack.map((tech, index) => (
-                    <span key={index} className="tech_icon">
-                      {techIcons[tech]}
-                    </span>
-                  ))}
-                </div>
+                <footer>
+                  <h5>Tech Used: </h5>
+                  <div className="tech_icon_container">
+                    {project.stack.map((tech, index) => (
+                      <span key={index} className="tech_icon">
+                        {techIcons[tech]}
+                      </span>
+                    ))}
+                  </div>
+                </footer>
               </div>
             </div>
           ))}
