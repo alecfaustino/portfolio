@@ -2,7 +2,7 @@ const projectsList = [
   {
     id: 1,
     title: "The Kid's Place Daycare",
-    stack: ["HTML", "CSS", "JavaScript"],
+    stack: ["html", "css", "javascript"],
     deployedUrl: "https://thekidsplacedaycare.com/",
     repoURL: "Private Repo",
     isDeployed: true, 
@@ -11,8 +11,8 @@ const projectsList = [
   },
   {
     id: 2,
-    title: "Some App I'll add later",
-    stack: ["React", "Node.js", "ExpressjS"],
+    title: "Some project",
+    stack: ["react", "nodejs", "expressjs", "ruby"],
     deployedUrl: "Not live, code only",
     repoURL: "https://...",
     isDeployed: false, 
@@ -21,8 +21,8 @@ const projectsList = [
   },
   {
     id: 3,
-    title: "Some App I'll add later",
-    stack: ["React", "Node.js", "ExpressjS"],
+    title: "Some cool app",
+    stack: ["react", "jquery", "nodejs", "expressjs"],
     deployedUrl: "Not live, code only",
     repoURL: "https://...",
     isDeployed: false, 
@@ -31,8 +31,8 @@ const projectsList = [
   },
   {
     id: 4,
-    title: "Some App I'll add later",
-    stack: ["React", "Node.js", "ExpressjS"],
+    title: "Something awesome",
+    stack: ["jquery", "nodejs", "expressjs"],
     deployedUrl: "Not live, code only",
     repoURL: "https://...",
     isDeployed: false, 
