@@ -31,6 +31,12 @@ const techIcons = {
   jquery: <SiJquery title="jQuery" />,
   cookies: <FaCookie title="cookies" />,
   bcrypt: <FaLock title="bcrypt" />,
+  ajax: <FaExchangeAlt title="AJAX" />,
+  bootstrap: <SiBootstrap title="bootstrap" />,
+  sass: <SiSass title="sass" />,
+  postgresql: <SiPostgresql title="PostgreSQL" />,
+  mocha: <SiMocha title="mocha" />,
+  git: <SiGit title="git" />,
 };
 
 const Projects = () => {
@@ -47,6 +53,7 @@ const Projects = () => {
               </div>
               <div>
                 <h4>{project.title}</h4>
+                <p>{project.description}</p>
                 <h5>Tech Used: </h5>
                 <div className="tech_icon_container">
                   {project.stack.map((tech, index) => (
