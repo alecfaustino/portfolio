@@ -43,6 +43,10 @@ const techIcons = {
 };
 
 const Projects = () => {
+  const handleModalClick = () => {
+    setSelectedProject(project);
+    setShowModal(true);
+  };
   return (
     <>
       <h2>myProjects</h2>

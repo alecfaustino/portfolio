@@ -3,7 +3,7 @@ const projectsList = [
     id: 1,
     title: "Lotide",
     description: "A mini clone of the Lodash library",
-    stack: ["javascript", "mocha", ",chai", "git"],
+    stack: ["javascript", "mocha", "chai", "git"],
     deployedUrl: "https://www.npmjs.com/package/@alecfaustino/lotide",
     repoURL: "https://github.com/alecfaustino/Lotide",
     isDeployed: true, 

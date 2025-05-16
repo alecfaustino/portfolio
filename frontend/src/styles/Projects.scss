@@ -28,6 +28,14 @@ h2, h4, h5 {
   max-width: 400px;
   box-sizing: border-box;
   border-radius: 6px; 
+  box-shadow: 0 0 0px rgba(255, 255, 255, 0);
+  transition: all 0.3s ease, transform 0.2s ease;
+}
+
+.project_card:hover {
+  box-shadow: 0 0 4px 4px rgba(51, 204, 255, 1);
+  transform: scale(1.02);
+  cursor: pointer;
 }
 
 
