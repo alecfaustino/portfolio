@@ -33,27 +33,33 @@ const ImageSlider = ({ photos }) => {
           />
         ))}
       </div>
-      <button
-        onClick={showPrevImage}
-        style={{ left: 0 }}
-        className="img_slider_btn">
-        <ArrowBigLeft />
-      </button>
-      <button
-        onClick={showNextImage}
-        style={{ right: 0 }}
-        className="img_slider_btn">
-        <ArrowBigRight />
-      </button>
-      <div className="img_slider_selectors">
-        {photos.map((_, index) => (
+
+      {photos.length > 1 && (
+        <>
           <button
-            className="img_slider_dots"
-            key={index}
-            onClick={() => setImageIndex(index)}>
-            {index === imageIndex ? <CircleDot /> : <Circle />}
+            onClick={showPrevImage}
+            style={{ left: 0 }}
+            className="img_slider_btn">
+            <ArrowBigLeft />
           </button>
-        ))}
+          <button
+            onClick={showNextImage}
+            style={{ right: 0 }}
+            className="img_slider_btn">
+            <ArrowBigRight />
+          </button>
+        </>
+      )}
+      <div className="img_slider_selectors">
+        {photos.length > 1 &&
+          photos.map((_, index) => (
+            <button
+              className="img_slider_dots"
+              key={index}
+              onClick={() => setImageIndex(index)}>
+              {index === imageIndex ? <CircleDot /> : <Circle />}
+            </button>
+          ))}
       </div>
     </div>
   );

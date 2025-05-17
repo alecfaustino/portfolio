@@ -41,7 +41,7 @@ const projectsList = [
     repoURL: "https://github.com/alecfaustino/tweeter",
     isDeployed: false, 
     highlights: "This project gave a lot of exposure to understanding CSS Flexbox, responsive design, DOM Manipulation using JavaScript and jQuery.",
-    photo: ["/tweeter.png"]
+    photo: ["/tweeter.png", "/tweeter2.png", "/tweeter4.png"]
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ const projectsList = [
     repoURL: "https://github.com/alecfaustino/LightBnB",
     isDeployed: false, 
     highlights: "This project helped me gain a deeper understanding of relational databases, database security, and database design. The primary focus of this project was to work with Entity Relationship Diagrams and postgreSQL",
-    photo: ["/lightbnb.png"]
+    photo: ["/lightbnb.png", "/lightbnb2.png", "/lightbnb3.png", "/lightbnb4.png", "/lightbnb5.png" ]
   },
     {
     id: 6,
@@ -74,7 +74,7 @@ const projectsList = [
     repoURL: "Repo Unavailable: Private Repo",
     isDeployed: true, 
     highlights: "This project was intended to be for me to learn and explore the basic vanilla HTML, CSS, and JavaScript. I ended up learning key-skills like mobile-first development and responsive design. This was created with no external libraries or frameworks. I collaborated directly with the client to translate their vision into a site that highlighted key services and encouraged lead generation.",
-    photo: ["/thekidsplacedaycare.png"]
+    photo: ["/thekidsplacedaycare.png", "/thekidsplacedaycare2.png"]
   },
 
 ];
