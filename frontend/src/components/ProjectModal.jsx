@@ -64,11 +64,15 @@ const ProjectModal = ({ project, setShowModal }) => {
           {project.isDeployed && (
             <>
               <h2>Live URL</h2>
-              <a href={project.deployedUrl}>{project.deployedUrl}</a>
+              <a href={project.deployedUrl} className="modal_urls">
+                {project.deployedUrl}
+              </a>
             </>
           )}
           <h2>Repo URL </h2>
-          <a href={project.repoURL}>{project.repoURL}</a>
+          <a href={project.repoURL} className="modal_urls">
+            {project.repoURL}
+          </a>
         </div>
       </div>
     </>
