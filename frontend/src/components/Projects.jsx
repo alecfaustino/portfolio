@@ -61,7 +61,7 @@ const Projects = ({ setShowModal, setSelectedProject, showModal }) => {
               key={project.id}
               onClick={() => handleModalClick(project)}>
               <div>
-                <img className="project_card_img" src={project.photo} />
+                <img className="project_card_img" src={project.photo[0]} />
               </div>
               <div>
                 <h4>{project.title}</h4>

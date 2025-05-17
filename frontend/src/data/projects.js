@@ -8,7 +8,7 @@ const projectsList = [
     repoURL: "https://github.com/alecfaustino/Lotide",
     isDeployed: true, 
     highlights: "This project helped me understand JavaScript fundamentals. This helped me gain a strong understanding of how functions work in JavaScript. This allowed me to also gain appreciation for modern helper functions, and libraries that make asserting/testing easier.",
-    photo: "/lotide.png"
+    photo: ["/lotide.png"]
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const projectsList = [
     repoURL: "https://github.com/alecfaustino/snake-client",
     isDeployed: false, 
     highlights: "This project allowed me to understand the difference between Client and Server Code responsibilities. Used TCP to create client/server implementation in Node. This was also an introduction to asynchronous programming, callbacks, event handlers, and HTTP.",
-    photo: "/snake.png"
+    photo: ["/snake.png"]
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const projectsList = [
     repoURL: "https://github.com/alecfaustino/tinyapp",
     isDeployed: false, 
     highlights: "This project helped me learn to build an HTTP Server that handles requests from the client. This also introduced concepts like authentication protection, use cookies to gather information about logged-in state, and analytics of the URLs, etc. Importantly, there was an implementation of CRUD.",
-    photo: "/tinyapp.png"
+    photo: ["/tinyapp.png", "/tinyapp2.png", "/tinyapp3.png", "/tinyapp4.png", "/tinyapp5.png",]
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const projectsList = [
     repoURL: "https://github.com/alecfaustino/tweeter",
     isDeployed: false, 
     highlights: "This project gave a lot of exposure to understanding CSS Flexbox, responsive design, DOM Manipulation using JavaScript and jQuery.",
-    photo: "/tweeter.png"
+    photo: ["/tweeter.png"]
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ const projectsList = [
     repoURL: "https://github.com/alecfaustino/LightBnB",
     isDeployed: false, 
     highlights: "This project helped me gain a deeper understanding of relational databases, database security, and database design. The primary focus of this project was to work with Entity Relationship Diagrams and postgreSQL",
-    photo: "/lightbnb.png"
+    photo: ["/lightbnb.png"]
   },
     {
     id: 6,
@@ -63,7 +63,7 @@ const projectsList = [
     repoURL: "https://github.com/alecfaustino/photolabs",
     isDeployed: false, 
     highlights: "This project a great introduction to React and hooks. I utilized useState, useEffect, useReducer, and some custom hooks.",
-    photo: "/photolabs.png"
+    photo: ["/photolabs.png", "photolabs2.png"]
   },
   {
     id: 7,
@@ -74,7 +74,7 @@ const projectsList = [
     repoURL: "Repo Unavailable: Private Repo",
     isDeployed: true, 
     highlights: "This project was intended to be for me to learn and explore the basic vanilla HTML, CSS, and JavaScript. I ended up learning key-skills like mobile-first development and responsive design. This was created with no external libraries or frameworks. I collaborated directly with the client to translate their vision into a site that highlighted key services and encouraged lead generation.",
-    photo: "/thekidsplacedaycare.png"
+    photo: ["/thekidsplacedaycare.png"]
   },
 
 ];

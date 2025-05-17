@@ -18,6 +18,7 @@ import {
   SiMocha,
 } from "react-icons/si";
 import { FaCookie, FaLock, FaMugHot, FaExchangeAlt } from "react-icons/fa";
+import ImageSlider from "./ImageSlider";
 
 const techIcons = {
   html: <SiHtml5 title="HTML" />,
@@ -49,7 +50,7 @@ const ProjectModal = ({ project, setShowModal }) => {
       <div className="modal_overlay" onClick={() => setShowModal(false)}>
         <div className="modal_content" onClick={(e) => e.stopPropagation()}>
           <h2>{project.title}</h2>
-          <img className="modal_img" src={project.photo} />
+          <ImageSlider photos={project.photo} />
           <p>{project.description}</p>
           <h2>Tech Used </h2>
           <div className="tech_icon_container">
