@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { ArrowBigLeft, ArrowBigRight } from "lucide-react";
+import { ArrowBigLeft, ArrowBigRight, CircleDot, Circle } from "lucide-react";
 import "../styles/ImageSlider.scss";
 import { ImPrevious2 } from "react-icons/im";
 
@@ -22,8 +22,17 @@ const ImageSlider = ({ photos }) => {
     });
   };
   return (
-    <div style={{ position: "relative" }}>
-      <img className="modal_img" src={photos[imageIndex]} />
+    <div className="img_slider_container">
+      <div className="img_slider_render">
+        {photos.map((photo) => (
+          <img
+            key={photo}
+            className="modal_img"
+            src={photo}
+            style={{ translate: `${-100 * imageIndex}%` }}
+          />
+        ))}
+      </div>
       <button
         onClick={showPrevImage}
         style={{ left: 0 }}
@@ -36,6 +45,16 @@ const ImageSlider = ({ photos }) => {
         className="img_slider_btn">
         <ArrowBigRight />
       </button>
+      <div className="img_slider_selectors">
+        {photos.map((_, index) => (
+          <button
+            className="img_slider_dots"
+            key={index}
+            onClick={() => setImageIndex(index)}>
+            {index === imageIndex ? <CircleDot /> : <Circle />}
+          </button>
+        ))}
+      </div>
     </div>
   );
 };
