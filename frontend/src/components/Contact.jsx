@@ -69,7 +69,6 @@ const Contact = ({ setTopic, handleDownload }) => {
         </label>
         <button type="submit">Send</button>
       </form>
-
       <div className="contact_cta">
         <h3>Not ready to contact yet? </h3>
         <button onClick={() => setTopic("projects")}>
