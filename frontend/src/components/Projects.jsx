@@ -42,10 +42,12 @@ const techIcons = {
   rails: <SiRubyonrails title="Ruby on Rails" />,
 };
 
-const Projects = () => {
-  const handleModalClick = () => {
+const Projects = ({ setShowModal, setSelectedProject, showModal }) => {
+  const handleModalClick = (project) => {
     setSelectedProject(project);
     setShowModal(true);
+    console.log("Clicked project:", project);
+    console.log("###", showModal);
   };
   return (
     <>
@@ -54,7 +56,10 @@ const Projects = () => {
         {[...projectsList]
           .sort((a, b) => b.id - a.id)
           .map((project) => (
-            <div className="project_card" key={project.id}>
+            <div
+              className="project_card"
+              key={project.id}
+              onClick={() => handleModalClick(project)}>
               <div>
                 <img className="project_card_img" src={project.photo} />
               </div>

@@ -3,6 +3,7 @@ import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Landing from "./components/Landing";
 import Projects from "./components/Projects";
+import ProjectModal from "./components/ProjectModal";
 import { useState } from "react";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Projects
           setShowModal={setShowModal}
           setSelectedProject={setSelectedProject}
+          showModal={showModal}
         />
       )}
       {topic === "experience" && <h1>Experience</h1>}
@@ -30,7 +32,7 @@ function App() {
       {topic === "contact" && <h1>Contact Page Coming Soon</h1>}
       <Footer />
 
-      {showModal && selectedProject && (
+      {showModal && (
         <ProjectModal project={selectedProject} setShowModal={setShowModal} />
       )}
     </>
