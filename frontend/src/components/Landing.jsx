@@ -20,17 +20,10 @@ import {
 import { FaCookie, FaLock, FaMugHot, FaExchangeAlt } from "react-icons/fa";
 import { useState } from "react";
 
-const Landing = ({ selectTopic }) => {
+const Landing = ({ selectTopic, handleDownload }) => {
   const [showAll, setShowAll] = useState(false);
   const toggleShowAll = () => setShowAll((prev) => !prev);
-  const handleDownload = () => {
-    const link = document.createElement("a");
-    link.href = "../../public/Resume2025.pdf";
-    link.download = "My_Resume.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+
   return (
     <>
       <div className="landing_main_container">
@@ -80,7 +73,9 @@ const Landing = ({ selectTopic }) => {
             </p>
           </section>
           <div className="landing_contact_buttons_container">
-            <button onClick={handleDownload} className="landing_buttons">
+            <button
+              onClick={() => handleDownload()}
+              className="landing_buttons">
               downloadCV
             </button>
 

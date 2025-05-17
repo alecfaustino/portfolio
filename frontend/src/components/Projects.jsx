@@ -51,7 +51,7 @@ const Projects = ({ setShowModal, setSelectedProject, showModal }) => {
   };
   return (
     <>
-      <h2>myProjects</h2>
+      <h1>myProjects</h1>
       <div className="project_cards_container">
         {[...projectsList]
           .sort((a, b) => b.id - a.id)

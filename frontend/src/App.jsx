@@ -5,20 +5,32 @@ import Landing from "./components/Landing";
 import Projects from "./components/Projects";
 import ProjectModal from "./components/ProjectModal";
 import { useState } from "react";
+import Contact from "./components/Contact";
 
 function App() {
   const [topic, setTopic] = useState("landing");
   const selectTopic = (selected) => {
     setTopic(selected);
   };
-
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "../../public/Resume2025.pdf";
+    link.download = "My_Resume.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   const [showModal, setShowModal] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
   return (
     <>
       <Navigation topic={topic} selectTopic={selectTopic} />
       {topic === "landing" && (
-        <Landing topic={topic} selectTopic={selectTopic} />
+        <Landing
+          topic={topic}
+          selectTopic={selectTopic}
+          handleDownload={handleDownload}
+        />
       )}
       {topic === "projects" && (
         <Projects
@@ -27,9 +39,11 @@ function App() {
           showModal={showModal}
         />
       )}
-      {topic === "experience" && <h1>Experience</h1>}
-      {topic === "interests" && <h1>Interests</h1>}
-      {topic === "contact" && <h1>Contact Page Coming Soon</h1>}
+      {topic === "experience" && <h1>Experience Page Coming Soon</h1>}
+      {topic === "interests" && <h1>Interests Page Coming Soon</h1>}
+      {topic === "contact" && (
+        <Contact setTopic={setTopic} handleDownload={handleDownload} />
+      )}
       <Footer />
 
       {showModal && (
