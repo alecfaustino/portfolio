@@ -1,11 +1,30 @@
 import React from "react";
 import "../styles/Contact.scss";
+import emailjs from "@emailjs/browser";
+import { useState } from "react";
 
 const Contact = ({ setTopic, handleDownload }) => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   const handleSubmit = (e) => {
     e.preventDefault();
-    // You can later hook this into emailJS, Formspree, etc.
-    alert("Message sent!");
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        e.target,
+        import.meta.env.VITE_PUBLIC_KEY
+      )
+      .then((res) => {
+        alert("Message Sent!");
+        setFormData({ name: "", email: "", message: "" });
+      })
+      .catch(() => {
+        alert("Oops! Something went wrong. Please try again.");
+      });
   };
 
   return (
@@ -14,7 +33,14 @@ const Contact = ({ setTopic, handleDownload }) => {
       <form className="contact_form" onSubmit={handleSubmit}>
         <label>
           Name:
-          <input type="text" name="name" placeholder="Name" required />
+          <input
+            type="text"
+            name="name"
+            placeholder="Name"
+            value={formData.name}
+            required
+            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+          />
         </label>
         <label>
           Email:
@@ -22,7 +48,11 @@ const Contact = ({ setTopic, handleDownload }) => {
             type="email"
             name="email"
             placeholder="example@email.com"
+            value={formData.email}
             required
+            onChange={(e) =>
+              setFormData({ ...formData, email: e.target.value })
+            }
           />
         </label>
         <label>
@@ -31,20 +61,21 @@ const Contact = ({ setTopic, handleDownload }) => {
             name="message"
             rows="5"
             placeholder="Say Hello!"
-            required></textarea>
+            value={formData.message}
+            required
+            onChange={(e) =>
+              setFormData({ ...formData, message: e.target.value })
+            }></textarea>
         </label>
         <button type="submit">Send</button>
       </form>
 
       <div className="contact_cta">
-        <p>
-          Not ready to contact yet?{" "}
-          <button onClick={() => setTopic("projects")}>
-            Check out my projects
-          </button>{" "}
-          or{" "}
-          <button onClick={() => handleDownload()}>download my resume!</button>
-        </p>
+        <h3>Not ready to contact yet? </h3>
+        <button onClick={() => setTopic("projects")}>
+          Check out my projects
+        </button>{" "}
+        or <button onClick={() => handleDownload()}>download my resume!</button>
       </div>
     </div>
   );
