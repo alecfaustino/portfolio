@@ -2,17 +2,20 @@ import React from "react";
 import "../styles/Footer.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faLocationDot } from "@fortawesome/free-solid-svg-icons";
 
 const Footer = () => {
   return (
     <>
       <footer className="footer_main_container">
-        <div>
-          <p>Unique Visitors (feature coming soon)</p>
+        <div className="footer_left">
+          <p>
+            <FontAwesomeIcon icon={faLocationDot} /> Calgary, AB
+          </p>
         </div>
-        <div>
-          <p>Server is: (Backend server indicator coming soon)</p>
+        <div className="footer_mid">
+          <p>Actively Seeking Opportunities</p>
+          <p>Will eagerly learn in any role</p>
         </div>
         <div className="footer_logo_container">
           <ul>

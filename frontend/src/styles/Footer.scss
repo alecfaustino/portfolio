@@ -1,12 +1,18 @@
 .footer_main_container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   border-top: 2px solid white;
   padding: 5px;
+  flex-wrap: wrap;
 }
 
 .footer_logo_container {
   display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+
   
 }
 
@@ -22,3 +28,21 @@
   margin: 5px;
 }
 
+.footer_mid p {
+  padding: 0px;
+  margin: 0px;
+}
+
+.footer_mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 2;
+  text-align: center;
+}
+
+.footer_left {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
