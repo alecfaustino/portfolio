@@ -17,7 +17,6 @@ const Navigation = ({ selectTopic, topic }) => {
             <li onClick={() => selectTopic("landing")}>Home</li>
             <li onClick={() => selectTopic("projects")}>Projects</li>
             <li onClick={() => selectTopic("experience")}>Experience</li>
-            <li onClick={() => selectTopic("interests")}>Interests</li>
             <li onClick={() => selectTopic("contact")}>Contact</li>
           </ul>
         </div>

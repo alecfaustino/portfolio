@@ -2,7 +2,12 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 2px solid white;
-  padding: 5px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  max-height: 110px;
+  background-color: black;
+  z-index: 1000;
 }
 
 .nav_branding {
@@ -10,6 +15,7 @@
   align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  font-size: 1.5rem;
 }
 
 .nav_img {
@@ -34,9 +40,10 @@
 .nav_topics_container li {
   display: flex;
   padding: 5px;
-  margin: 0px;
+  margin: 16px;
   border-top: 2px solid transparent;
   transition: border-top 0.5s ease, transform 0.3s ease;
+  font-size: 1.5rem;
 }
 
 .nav_topics_container li:hover {

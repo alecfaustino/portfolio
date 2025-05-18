@@ -41,7 +41,6 @@ function App() {
         />
       )}
       {topic === "experience" && <Experience />}
-      {topic === "interests" && <h1>Interests Page Coming Soon</h1>}
       {topic === "contact" && (
         <Contact setTopic={setTopic} handleDownload={handleDownload} />
       )}

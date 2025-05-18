@@ -50,7 +50,7 @@ const Projects = ({ setShowModal, setSelectedProject, showModal }) => {
     console.log("###", showModal);
   };
   return (
-    <>
+    <div className="projects_main_container">
       <h1>myProjects</h1>
       <div className="project_cards_container">
         {[...projectsList]
@@ -80,7 +80,7 @@ const Projects = ({ setShowModal, setSelectedProject, showModal }) => {
             </div>
           ))}
       </div>
-    </>
+    </div>
   );
 };
 
