@@ -9,10 +9,10 @@ const Footer = () => {
     <>
       <footer className="footer_main_container">
         <div>
-          <p>Unique Visitors: 24</p>
+          <p>Unique Visitors (feature coming soon)</p>
         </div>
         <div>
-          <p>Server is: Live 🟢</p>
+          <p>Server is: (Backend server indicator coming soon)</p>
         </div>
         <div className="footer_logo_container">
           <ul>
