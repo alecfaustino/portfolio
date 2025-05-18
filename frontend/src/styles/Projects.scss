@@ -15,12 +15,13 @@ h1 {
 }
 h2, h4, h5 {
   text-align: center;
+  
 }
 
 
 .project_cards_container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
   justify-items: center;
   padding: 1rem;

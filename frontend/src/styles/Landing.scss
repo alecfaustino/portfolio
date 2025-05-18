@@ -163,8 +163,14 @@
   }
 
   .landing_main_img {
-    height: 40vh;
-    width: 40vh;
+    height: 30vh;
+    width: 30vh;
+  }
+
+  .tech_icons_grid.expanded {
+    max-height: 400px; 
+    transition: max-height 0.6s ease;
+    padding-bottom: 200px;
   }
 }
 
