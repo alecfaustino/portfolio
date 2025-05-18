@@ -6,6 +6,7 @@ import Projects from "./components/Projects";
 import ProjectModal from "./components/ProjectModal";
 import { useState } from "react";
 import Contact from "./components/Contact";
+import Experience from "./components/Experience";
 
 function App() {
   const [topic, setTopic] = useState("landing");
@@ -39,7 +40,7 @@ function App() {
           showModal={showModal}
         />
       )}
-      {topic === "experience" && <h1>Experience Page Coming Soon</h1>}
+      {topic === "experience" && <Experience />}
       {topic === "interests" && <h1>Interests Page Coming Soon</h1>}
       {topic === "contact" && (
         <Contact setTopic={setTopic} handleDownload={handleDownload} />
