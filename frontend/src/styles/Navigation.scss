@@ -105,7 +105,7 @@
     position: absolute;
     top: 70px;
     right: 0;
-    background-color: rgba(0, 0, 0, 0.85);
+    background-color: rgba(0, 0, 0, 0.95);
     width: 100%;
     text-align: center;
     transition: opacity 0.3s ease, max-height 0.3s ease;
@@ -113,7 +113,7 @@
 
   .nav_topics_container.open {
     opacity: 1;
-    max-height: 500px; 
+    max-height: 100vh; 
   }
 
   .hamburger {
@@ -140,9 +140,9 @@
   display: flex;
   align-items: center;
   list-style: none;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0;
   flex-direction: column;
-  height: 500px;
+  height: 100vh;
   }
 }

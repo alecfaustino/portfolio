@@ -28,7 +28,7 @@ const Landing = ({ selectTopic, handleDownload }) => {
     <>
       <div className="landing_main_container">
         <div className="landing_image_container">
-          <h3>Hello World, I'm Alec.</h3>
+          <h2>Hello World, I'm Alec.</h2>
           <img
             className="landing_main_img"
             src="/mainphoto.jpg"
@@ -41,7 +41,7 @@ const Landing = ({ selectTopic, handleDownload }) => {
             <p>
               I’m a <strong>software developer</strong> based in{" "}
               <strong>Calgary</strong> with a background in
-              <strong>team leadership</strong> and a focus on building{" "}
+              <strong> team leadership</strong> and a focus on building{" "}
               <em>thoughtful, user-centered</em> web applications.
             </p>
             <p>
