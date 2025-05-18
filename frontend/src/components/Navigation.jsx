@@ -20,7 +20,9 @@ const Navigation = ({ selectTopic }) => {
         <h2 className="nav_name">Alec Faustino</h2>
       </div>
 
-      <div className="hamburger" onClick={() => setMenuOpen((prev) => !prev)}>
+      <div
+        className={`hamburger ${menuOpen ? "open" : ""}`}
+        onClick={() => setMenuOpen(!menuOpen)}>
         <div className="bar" />
         <div className="bar" />
         <div className="bar" />

@@ -99,6 +99,24 @@
 
   .hamburger {
     display: flex;
+    margin-right: 3rem;
+    z-index: 1001;
+  }
+
+  .hamburger .bar {
+  transform-origin: center;
+}
+
+  .hamburger.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(7.5px, 7.5px);
+  }
+
+  .hamburger.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(7.5px, -7.5px);
   }
 
   .nav_name{
@@ -124,4 +142,3 @@
   height: 100%;
   }
 }
-
