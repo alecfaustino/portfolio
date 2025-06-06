@@ -147,6 +147,18 @@ const projectsList = [
       "This midterm project was the first collaborative coding experience I had. There were a lot of valuable lessons, such as version control and project management with a team. I felt that this project bolstered a lot of learning especially with backend routes/apis. I collaborated with a peer with a similar experience level which allowed us to enhance our communication and collaborative abilities.",
     photo: ["/resourcewall.png", "/resourcewall2.png", "/resourcewall3.png"],
   },
+  {
+    id: 9,
+    title: "GroceryTrackr",
+    description: "A Grocery List App (Currently in progress)",
+    stack: ["React", "nodejs", "expressjs", "postgresql", "bcrypt", "cookies"],
+    deployedUrl: null,
+    repoURL: "https://github.com/alecfaustino/grocerylist",
+    isDeployed: false,
+    highlights:
+      "This was a simple CRUD application but utilizing some of the newer technologies that I've learned and bolstering my understanding of the use of bcrypt and cookies. I learned how to use routes in react and how to protect routes from the server side. As the usecase is likely on a mobile, the focus for styling was to make it as mobile responsive as possible",
+    photo: ["/grocerytrackr3.png", "/grocerytrackr.png", "/grocerytrackr2.png"],
+  },
 ];
 
 export default projectsList;
