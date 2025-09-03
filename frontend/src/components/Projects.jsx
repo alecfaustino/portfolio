@@ -7,8 +7,6 @@ const Projects = ({ setShowModal, setSelectedProject, showModal }) => {
   const handleModalClick = (project) => {
     setSelectedProject(project);
     setShowModal(true);
-    console.log("Clicked project:", project);
-    console.log("###", showModal);
   };
   return (
     <div className="projects_main_container">

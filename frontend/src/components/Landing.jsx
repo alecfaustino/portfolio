@@ -1,23 +1,6 @@
 import React from "react";
 import "../styles/Landing.scss";
-import {
-  SiJavascript,
-  SiRuby,
-  SiHtml5,
-  SiCss3,
-  SiReact,
-  SiNodedotjs,
-  SiExpress,
-  SiRubyonrails,
-  SiJquery,
-  SiBootstrap,
-  SiSass,
-  SiMongodb,
-  SiPostgresql,
-  SiGit,
-  SiMocha,
-} from "react-icons/si";
-import { FaCookie, FaLock, FaMugHot, FaExchangeAlt } from "react-icons/fa";
+import techIcons from "../data/techicons";
 import { useState } from "react";
 
 const Landing = ({ selectTopic, handleDownload }) => {
@@ -92,87 +75,17 @@ const Landing = ({ selectTopic, handleDownload }) => {
                 className={`tech_icons_grid ${
                   showAll ? "expanded" : "collapsed"
                 }`}>
-                <div className="tech_icon">
-                  <SiJavascript title="JavaScript" />
-                  <p>JavaScript</p>
-                </div>
-                <div className="tech_icon">
-                  <SiReact title="React" />
-                  <p>React</p>
-                </div>
-                <div className="tech_icon">
-                  <SiNodedotjs title="Node.js" />
-                  <p>Node.js</p>
-                </div>
-                <div className="tech_icon">
-                  <SiExpress title="Express" />
-                  <p>Express</p>
-                </div>
-                <div className="tech_icon">
-                  <SiMongodb title="MongoDB" />
-                  <p>MongoDB</p>
-                </div>
-                <div className="tech_icon">
-                  <SiPostgresql title="PostgreSQL" />
-                  <p>PostgreSQL</p>
-                </div>
-                <div className="tech_icon">
-                  <SiHtml5 title="HTML" />
-                  <p>HTML</p>
-                </div>
-                <div className="tech_icon">
-                  <SiCss3 title="CSS" />
-                  <p>CSS</p>
-                </div>
-                <div className="tech_icon">
-                  <SiSass title="SASS" />
-                  <p>SASS</p>
-                </div>
-                <div className="tech_icon">
-                  <SiBootstrap title="Bootstrap" />
-                  <p>Bootstrap</p>
-                </div>
-                <div className="tech_icon">
-                  <SiJquery title="jQuery" />
-                  <p>jQuery</p>
-                </div>
-                <div className="tech_icon">
-                  <SiMocha title="Mocha" />
-                  <p>Mocha</p>
-                </div>
-                <div className="tech_icon">
-                  <FaMugHot title="Chai" />
-                  <p>Chai</p>
-                </div>
-                <div className="tech_icon">
-                  <FaLock title="bcrypt" />
-                  <p>bcrypt</p>
-                </div>
-                <div className="tech_icon">
-                  <FaCookie title="cookie_session" />
-                  <p>cookie_session</p>
-                </div>
-                <div className="tech_icon">
-                  <SiRuby title="Ruby" />
-                  <p>Ruby</p>
-                </div>
-                <div className="tech_icon">
-                  <SiRubyonrails title="Rails" />
-                  <p>Rails</p>
-                </div>
-                <div className="tech_icon">
-                  <FaExchangeAlt title="AJAX" />
-                  <p>AJAX</p>
-                </div>
-                <div className="tech_icon">
-                  <SiGit title="Git" />
-                  <p>Git</p>
-                </div>
+                {Object.entries(techIcons).map(([name, Icon]) => (
+                  <div className="tech_icon" key={name}>
+                    {Icon}
+                    <p>{Icon.props.title}</p>
+                  </div>
+                ))}
               </div>
-              <button onClick={toggleShowAll} className="show_more_btn">
-                {showAll ? "Show less" : "Show more"}
-              </button>
             </div>
+            <button onClick={toggleShowAll} className="show_more_btn">
+              {showAll ? "Show less" : "Show more"}
+            </button>
           </div>
         </div>
       </div>
