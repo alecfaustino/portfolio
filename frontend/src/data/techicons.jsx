@@ -17,6 +17,7 @@ import {
   SiTypescript,
   SiNextdotjs,
   SiTailwindcss,
+  SiAxios,
 } from "react-icons/si";
 import { FaCookie, FaLock, FaMugHot, FaExchangeAlt } from "react-icons/fa";
 
@@ -24,6 +25,7 @@ const techIcons = {
   typescript: <SiTypescript title="TypeScript" />,
   nextjs: <SiNextdotjs title="Next.js" />,
   tailwindcss: <SiTailwindcss title="Tailwind CSS" />,
+  axios: <SiAxios title="Axios" />,
   html: <SiHtml5 title="HTML" />,
   css: <SiCss3 title="CSS" />,
   javascript: <SiJavascript title="JavaScript" />,

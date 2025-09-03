@@ -151,7 +151,7 @@ const projectsList = [
     id: 9,
     title: "NOMinate",
     description: "An infinite scroll app to find your next meal idea.",
-    stack: ["react", "nodejs", "expressjs", "git"],
+    stack: ["react", "nodejs", "expressjs", "git", "axios"],
     deployedUrl: "https://nominatefood.netlify.app/",
     repoURL: "Repo Unavailable: Private Repo",
     isDeployed: true,
