@@ -15,8 +15,8 @@ function App() {
   };
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = "../../public/Resume2025.pdf";
-    link.download = "My_Resume.pdf";
+    link.href = "../../public/Resume V5 2025.pdf";
+    link.download = "AlecFaustino_Resume.pdf";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
