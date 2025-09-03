@@ -14,10 +14,16 @@ import {
   SiPostgresql,
   SiGit,
   SiMocha,
+  SiTypescript,
+  SiNextdotjs,
+  SiTailwindcss,
 } from "react-icons/si";
 import { FaCookie, FaLock, FaMugHot, FaExchangeAlt } from "react-icons/fa";
 
 const techIcons = {
+  typescript: <SiTypescript title="TypeScript" />,
+  nextjs: <SiNextdotjs title="Next.js" />,
+  tailwindcss: <SiTailwindcss title="Tailwind CSS" />,
   html: <SiHtml5 title="HTML" />,
   css: <SiCss3 title="CSS" />,
   javascript: <SiJavascript title="JavaScript" />,
@@ -39,4 +45,4 @@ const techIcons = {
   rails: <SiRubyonrails title="Ruby on Rails" />,
 };
 
-module.exports = techIcons;
+export default techIcons;

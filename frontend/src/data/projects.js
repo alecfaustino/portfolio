@@ -164,7 +164,7 @@ const projectsList = [
     title: "FavFlix",
     description:
       "A movie browsing app using Next.js with Tailwind CSS and Material UI.",
-    stack: ["nextjs", "tailwindcss", "react", "git"],
+    stack: ["nextjs", "typescript", "tailwindcss", "react", "git"],
     deployedUrl: "https://favflix-nine.vercel.app/",
     repoURL: "Repo Unavailable: Private Repo",
     isDeployed: true,
