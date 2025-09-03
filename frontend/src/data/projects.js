@@ -104,7 +104,7 @@ const projectsList = [
     title: "PhotoLabs",
     description:
       "React-based single-page application that allows users to view photos in different contexts.",
-    stack: ["React", "expressjs", "nodejs", "sass", "postgresql", "git"],
+    stack: ["react", "expressjs", "nodejs", "sass", "postgresql", "git"],
     deployedUrl: null,
     repoURL: "https://github.com/alecfaustino/photolabs",
     isDeployed: false,
@@ -149,15 +149,28 @@ const projectsList = [
   },
   {
     id: 9,
-    title: "GroceryTrackr",
-    description: "A Grocery List App (Currently in progress)",
-    stack: ["React", "nodejs", "expressjs", "postgresql", "bcrypt", "cookies"],
-    deployedUrl: null,
-    repoURL: "https://github.com/alecfaustino/grocerylist",
-    isDeployed: false,
+    title: "NOMinate",
+    description: "An infinite scroll app to find your next meal idea.",
+    stack: ["react", "nodejs", "expressjs", "git"],
+    deployedUrl: "https://nominatefood.netlify.app/",
+    repoURL: "Repo Unavailable: Private Repo",
+    isDeployed: true,
     highlights:
-      "This was a simple CRUD application but utilizing some of the newer technologies that I've learned and bolstering my understanding of the use of bcrypt and cookies. I learned how to use routes in react and how to protect routes from the server side. As the usecase is likely on a mobile, the focus for styling was to make it as mobile responsive as possible",
-    photo: ["/grocerytrackr3.png", "/grocerytrackr.png", "/grocerytrackr2.png"],
+      "This project was a great opportunity to work with React and implement infinite scrolling. I learned a lot about state management and API integration (spoonacular API). I also implemented request throttling and a proxy backend (deployed on Render) to secure API keys. Designed a LinkedIn-style three-column layout (on larger screens) with plain CSS for a clean, responsive UI.",
+    photo: ["/nominate4.png"],
+  },
+  {
+    id: 10,
+    title: "FavFlix",
+    description:
+      "A movie browsing app using Next.js with Tailwind CSS and Material UI.",
+    stack: ["nextjs", "tailwindcss", "react", "git"],
+    deployedUrl: "https://favflix-nine.vercel.app/",
+    repoURL: "Repo Unavailable: Private Repo",
+    isDeployed: true,
+    highlights:
+      "Integrated the TMDB API via server components, implementing server-rendered pages, dynamic routing, and search functionality. Deployed on Vercel. Used Tailwind CSS and Material UI for consistent styling. Gained experience with Next.js features like server-side rendering and static site generation.",
+    photo: ["/favflix.png", "/favflix1.png"],
   },
 ];
 

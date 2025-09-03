@@ -18,6 +18,13 @@ h2, h4, h5 {
   
 }
 
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
 
 .project_cards_container {
   display: grid;

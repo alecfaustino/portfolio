@@ -70,9 +70,13 @@ const ProjectModal = ({ project, setShowModal }) => {
             </>
           )}
           <h2>Repo URL </h2>
-          <a href={project.repoURL} className="modal_urls">
-            {project.repoURL}
-          </a>
+          {project.repoURL && project.repoURL.startsWith("http") ? (
+            <a href={project.repoURL} className="modal_urls">
+              {project.repoURL}
+            </a>
+          ) : (
+            <p>Repo Unavailable: Private Repo</p>
+          )}
         </div>
       </div>
     </>

@@ -64,7 +64,16 @@ const Projects = ({ setShowModal, setSelectedProject, showModal }) => {
                 <img className="project_card_img" src={project.photo[0]} />
               </div>
               <div>
-                <h4>{project.title}</h4>
+                {project.deployedUrl ? (
+                  <a
+                    href={project.deployedUrl}
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    {project.title}
+                  </a>
+                ) : (
+                  <h4>{project.title}</h4>
+                )}
                 <p>{project.description}</p>
                 <footer>
                   <h5>Tech Used: </h5>
