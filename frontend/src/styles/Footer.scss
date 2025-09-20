@@ -4,7 +4,6 @@
   align-items: center;
   border-top: 2px solid white;
   padding: 0 16px;
-  flex-wrap: wrap;
 }
 
 .footer_logo_container {
@@ -12,8 +11,6 @@
   flex: 1;
   justify-content: center;
   align-items: center;
-
-  
 }
 
 .footer_logo_container a {
@@ -25,7 +22,7 @@
 }
 .footer_contact_logos {
   display: flex;
-  margin: 5px;
+  margin: 0px;
 }
 
 .footer_mid p {
@@ -45,4 +42,15 @@
   display: flex;
   flex: 1;
   justify-content: center;
+  align-content: center;
+}
+
+.footer_left p {
+  display: flex;
+}
+
+@media (max-width: 724px) {
+  .footer_mid {
+    display: none;
+  }
 }

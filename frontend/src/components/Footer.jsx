@@ -9,13 +9,12 @@ const Footer = () => {
     <>
       <footer className="footer_main_container">
         <div className="footer_left">
-          <p>
+          <p className="footer_contact_logos">
             <FontAwesomeIcon icon={faLocationDot} /> Calgary, AB
           </p>
         </div>
         <div className="footer_mid">
           <p>Actively Seeking Opportunities</p>
-          <p>Will eagerly learn in any role</p>
         </div>
         <div className="footer_logo_container">
           <ul>
