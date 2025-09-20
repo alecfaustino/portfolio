@@ -59,17 +59,15 @@
   justify-content: center;
   cursor: pointer;
   padding: 20px;
+  z-index: 1002;
 }
 
 .hamburger .bar {
-  width: 25px;
-  height: 3px;
+  width: 30px;
+  height: 4px;
   background-color: white;
   margin: 4px 0;
   transition: all 0.3s ease;
-}
-
-  .hamburger .bar {
   transform-origin: center;
 }
 
@@ -85,7 +83,7 @@
     transform: rotate(-45deg) translate(7.5px, -7.5px);
   }
 
-@media (min-width: 761px) and (max-width: 840px) {
+@media (min-width: 761px) and (max-width: 950px) {
   .nav_name {
     display: none;
   }
@@ -121,8 +119,15 @@
 
   .hamburger {
     display: flex;
-    z-index: 1001;
+    z-index: 1002;
   }
+  
+  .hamburger .bar {
+    width: 30px;
+    height: 10px;
+    border: 2px solid white; 
+  }
+  
 
   .nav_name{
     display: none;
