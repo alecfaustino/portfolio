@@ -4,7 +4,7 @@ import experienceList from "../data/experiences";
 
 const Experience = () => {
   return (
-    <section className="experience-section">
+    <div className="experience-section">
       <h2>myExperience</h2>
       <div className="timeline">
         {experienceList.map((item, index) => (
@@ -24,7 +24,7 @@ const Experience = () => {
           </div>
         ))}
       </div>
-    </section>
+    </div>
   );
 };
 
