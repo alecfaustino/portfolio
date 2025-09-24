@@ -151,8 +151,8 @@ const projectsList = [
     id: 9,
     title: "NOMinate",
     description: "An infinite scroll app to find your next meal idea.",
-    stack: ["react", "nodejs", "expressjs", "git", "axios"],
-    deployedUrl: "https://nominatefood.netlify.app/",
+    stack: ["nextjs", "typescript", "react", "tailwindcss", "git"],
+    deployedUrl: "https://nominate2-seven.vercel.app/home",
     repoURL: "Repo Unavailable: Private Repo",
     isDeployed: true,
     highlights:
