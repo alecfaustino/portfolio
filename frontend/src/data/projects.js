@@ -153,7 +153,7 @@ const projectsList = [
     description: "An infinite scroll app to find your next meal idea.",
     stack: ["nextjs", "typescript", "react", "tailwindcss", "git"],
     deployedUrl: "https://nominatefood.netlify.app/",
-    repoURL: "Repo Unavailable: Private Repo",
+    repoURL: "https://github.com/alecfaustino/nominate2",
     isDeployed: true,
     highlights:
       "This project was a great opportunity to work with React and implement infinite scrolling. I learned a lot about state management and API integration (spoonacular API). I also implemented request throttling and a proxy backend (deployed on Render) to secure API keys. Designed a LinkedIn-style three-column layout (on larger screens) with plain CSS for a clean, responsive UI.",
@@ -166,7 +166,7 @@ const projectsList = [
       "A movie browsing app using Next.js with Tailwind CSS and Material UI.",
     stack: ["nextjs", "typescript", "tailwindcss", "react", "git"],
     deployedUrl: "https://favflix-nine.vercel.app/",
-    repoURL: "Repo Unavailable: Private Repo",
+    repoURL: "https://github.com/alecfaustino/netflix-clone",
     isDeployed: true,
     highlights:
       "Integrated the TMDB API via server components, implementing server-rendered pages, dynamic routing, and search functionality. Deployed on Vercel. Used Tailwind CSS and Material UI for consistent styling. Gained experience with Next.js features like server-side rendering and static site generation.",
